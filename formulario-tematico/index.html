@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário Temático</title>
 </head>
+<style>
+    body {
+        background-color: rgb(128, 158, 175);
+    }
+</style>
 <body>
     <header>
         <h1><b>PETCASA ONG</b></h1>
@@ -50,6 +55,52 @@
                 <li> Ensaio fotográfico.</li>
                 <li> SPA para pets.</li>
             </ul>
+        </section>
+
+        <hr>
+
+        <section id="contatos">
+            <h2>Contatos</h2>
+            <p>Para esclarecer dúvidas, enviar sugestões, solicitar suporte e/ou busca para abandono, entre em contato através deste formulário. Retornaremos o seu contato o mais breve possível.</p>
+            <p>Preencha os dados abaixo:</p>
+
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend><b> 1 - Informações Pessoais</b></legend>
+
+                    <label for="campo-nome">Nome Completo:</label><br>
+                    <input type="text" name="nome_completo" id="campo-nome" placeholder="Informe seu nome" required size ="40"><br>
+
+                    <label for="campo-email">Email para Contato:</label><br>
+                    <input type="email" name="email_pessoal" id="campo-email" placeholder="Informe seu E-mail" required size ="40"><br>
+
+                    <label for="campo-telefone">Telefone para Contato:</label><br>
+                    <input type="tel" name="telefone_pessoal" id="campo-telefone" placeholder="Informe seu Telefone" required size ="40"><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend><b> 2 - Motivo do Contato </b></legend>
+
+                    <label for="campo-contato"> Qual é o assunto do contato:</label><br>
+                    <input id="selecao_contato" name="selecao_contato" type="text" list="listaassunto"/>
+                    <datalist id="listaassunto">Escolha entre estes:
+                        <option value="adesao">Contratar Serviços</option>
+                        <option value="duvidas">Dúvidas</option>
+                        <option value="suporte">Suporte</option>
+                        <option value="abandono">Notificar Abandono</option>
+                        <option value="outros">Outros</option>
+                    </datalist> <br>
+
+                    <label for="campo-observacao">Descreva seu contato</label><br>
+                    <textarea name="observacoes_adicionais" id="campo-observacao" rows="4" cols="50" placeholder="Detalhe aqui o motivo do contato..."></textarea>
+                </fieldset>
+
+                <br>
+                <br>
+
+                <button type="submit"><b>Enviar Formulário</b></button>
+                <button type="reset"><b>Limpar Formulário</b></button>
+            </form>
         </section>
      </main>    
 </body>
