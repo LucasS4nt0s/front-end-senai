@@ -45,6 +45,48 @@
             <p align="center"><b> Veja a unidade mais proxima de você: </b></p>
            <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118602.43598778112!2d-43.46492173831864!3d-21.72887895173913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x989c43e1f85da1%3A0x6236b026b3a0a468!2sJuiz%20de%20Fora%2C%20MG!5e0!3m2!1spt-BR!2sbr!4v1792024469489!5m2!1spt-BR!2sbr" width="800" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></center>
         </section>
+        <hr>
+        <section id="contato">
+            <h2>Contatos</h2>
+            <p>Para esclarecer dúvidas, solicitar suporte e realizar a adesão, entre em contato através deste formulário. Retornaremos o seu contato o mais breve possível.</p>
+            <p>Preencha os dados abaixo:</p>
+
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend><b> 1 - Informações Pessoais</b></legend>
+
+                    <label for="campo-nome">Nome Completo:</label><br>
+                    <input type="text" name="nome_completo" id="campo-nome" placeholder="Informe seu nome" required size ="40"><br>
+
+                    <label for="campo-email">Email para Contato:</label><br>
+                    <input type="email" name="email_pessoal" id="campo-email" placeholder="Informe seu E-mail" required size ="40"><br>
+
+                    <label for="campo-telefone">Telefone para Contato:</label><br>
+                    <input type="tel" name="telefone_pessoal" id="campo-telefone" placeholder="Informe seu Telefone" required size ="40"><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend><b> 2 - Motivo do Contato </b></legend>
+
+                    <label for="campo-contato"> Qual é o assunto do contato:</label><br>
+                    <input id="selecao_contato" name="selecao_contato" type="text" list="listaassunto"/>
+                    <datalist id="listaassunto">Escolha entre estes:
+                        <option value="adesao">Contratar Serviços</option>
+                        <option value="duvidas">Dúvidas</option>
+                        <option value="suporte">Suporte</option>
+                    </datalist> <br>
+
+                    <label for="campo-observacao">Descreva seu contato</label><br>
+                    <textarea name="observacoes_adicionais" id="campo-observacao" rows="4" cols="50" placeholder="Detalhe aqui o motivo do contato..."></textarea>
+                </fieldset>
+
+                <br>
+                <br>
+
+                <button type="submit"><b>Enviar Formulário</b></button>
+                <button type="reset"><b>Limpar Formulário</b></button>
+            </form>
+        </section>
     </main>
 </body>
 </html>
